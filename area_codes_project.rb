@@ -34,6 +34,11 @@ loop do
     break if input != "y"
 
     puts get_city_names(dial_book)
-    input_city = gets.chomp
-    puts "The area code for #{input_city} is #{get_area_code(dial_book, input_city)}" 
+    puts "Which city do you want to look up?"
+    input_city = gets.chomp.downcase
+    if dial_book.include?(input_city)
+        puts "The area code for #{input_city} is #{get_area_code(dial_book, input_city)}" 
+    else
+        puts "You entered an invalid city."
+    end
 end
