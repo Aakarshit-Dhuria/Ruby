@@ -38,8 +38,8 @@ my_hash[:f] = "Dhuria"
 # puts my_hash["f"] # returns empty because key doesn't exist
 
 
-#### One line syntax to iterate over a hash
-# my_hash.each {|key, value| puts "the key is #{key} and the value is #{value}"} 
+# my_hash.each {|key, #### One line syntax to iterate over a hash
+value| puts "the key is #{key} and the value is #{value}"} 
 
 
 
